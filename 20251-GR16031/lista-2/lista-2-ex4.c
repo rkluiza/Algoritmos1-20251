@@ -27,5 +27,5 @@ int main(){
 }
 
 //Por algum motivo, quando eu coloco virgula ele ignora os proximos scanf e n?o deixa eu digitar o valor. Isso acontece apenas quando a virgula é
-// na primeira váriavel
-//Coloquei o ponto na entrada de dados e funcionou ?
+// na primeira variavel
+//Coloquei o ponto na entrada de dados
