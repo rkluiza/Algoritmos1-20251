@@ -1,4 +1,4 @@
-# Tarefa: Lista de Exercícios 2
+# Tarefa: Lista de Exercícios 3
 
 Trabalho desenvolvido para a disciplina **Algoritmos e Programação: Fundamentos**.
 
@@ -8,7 +8,7 @@ Trabalho desenvolvido para a disciplina **Algoritmos e Programação: Fundamento
 
 ## 💡 Sobre o Programa
 
-> Lista de exercicios 2 rerente ao Grau-A do semestre.
+> Lista de exercicios 3 rerente ao Grau-A do semestre.
 
 ## 🚀 Como executar 
 
@@ -24,11 +24,11 @@ Este programa foi feito em **linguagem C** e pode ser executado no [OnlineGDB](h
 
 ## 📌 Observações
 
-- Dentro da pasta \lista-2\output, tem alguns executáveis que você pode baixar para executar o código feito em cada exercicio.
+- Dentro da pasta \lista-3\output, tem alguns executáveis que você pode baixar para executar o código feito em cada exercicio.
 - Cada exercício da lista está implementado em um arquivo separado.
 
 
 ## 📚 Referências
 
 Links ou materiais que foram úteis no desenvolvimento.
-- [Lista de exercícios 2]()
+- [Lista de exercícios 3]()
