@@ -1,6 +1,6 @@
 # Trabalho do Grau A
 
- do Grau A desenvolvido para a disciplina **Algoritmos e Programação: Fundamentos** durante o mês de abril. 
+ Trabalho do Grau A desenvolvido para a disciplina **Algoritmos e Programação: Fundamentos** durante o mês de abril. 
 
 ## 👥 Integrantes do Grupo
 
