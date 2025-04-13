@@ -1,6 +1,7 @@
 #include <stdio.h> //Funções de entrada e saída do sistema
 #include <locale.h> // Funções de formatação de texto (ou tentativa da mesma)
 #include <stdbool.h> // Funções de manipulação de variáveis booleanas 
+#include <stdlib.h> // Funções de manipulação de variáveis aleatórias
 
 int main() {
 
@@ -111,7 +112,7 @@ int main() {
 
             //Cálculo de sucetiveis 
             sucetiveis = ((100 - porcentagem_vacinada) * populacao_total / 100) + (porcentagem_vacinada * populacao_total / 100) * (1 - efetividade_vacina / 100);
-            
+
             //Exibição dos sucetiveis
             printf("O número de sucetiveis é: %i;\n\n", sucetiveis);
             
@@ -121,7 +122,7 @@ int main() {
             dias_simulacao = dias_simulacao - 1; // decrementa o número de dias da simulação para o loop
             
             //Loop de simulação
-            for(dias_simulacao; dias_simulacao > 0 && novos_infectados<=sucetiveis; dias_simulacao--){
+            for (dias_simulacao; dias_simulacao > 0 && novos_infectados<= sucetiveis; dias_simulacao--){
                 
                 // Sorteio de evento aleatório
                 int evento = rand() % 100 + 1;
@@ -156,11 +157,19 @@ int main() {
 
             }
 
-            //Saída de dados 
-            printf("\n\nNúmero total de infectados: %i\n", novos_infectados);
-            printf("População vacinada: %.2f\n", (porcentagem_vacinada * populacao_total) /100);
-            //printf("Vacinados infectados: %.2f\n", ((porcentagem_vacinada * populacao_total) /100) * (1 - efetividade_vacina / 100));
-            //printf("População saúdavel: %.2f\n", (populacao_total - novos_infectados - vacinados_infectados));
+            //Saída de dados
+
+                float vacinados = (porcentagem_vacinada * populacao_total) / 100;
+                float vacinados_suscetiveis = vacinados * (1 - efetividade_vacina / 100);
+                float proporcao_vacinados_suscetiveis = vacinados_suscetiveis / sucetiveis;
+    
+                vacinados_infectados = proporcao_vacinados_suscetiveis * novos_infectados;
+    
+                printf("\n\nNúmero total de infectados: %i\n", novos_infectados);
+                printf("População vacinada: %.0f\n", vacinados);
+                printf("Vacinados infectados: %i\n", (int)vacinados_infectados);
+                printf("População saudável: %i\n", populacao_total - novos_infectados);
+                
 
             printf("Simulação encerrada\n");
 
@@ -174,3 +183,4 @@ int main() {
     }
 
 }
+
