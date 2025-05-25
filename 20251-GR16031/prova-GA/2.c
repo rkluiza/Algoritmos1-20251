@@ -18,39 +18,6 @@ variável do tipo double.
  #include <stdlib.h>
  #include <stdbool.h>
 
-// int main() {
-
-//     int base, expoente;
-//     double resultado = 1.0;
-
-//     printf("Escreva o número que irá ser a BASE: \n");
-//     scanf("%d", &base);
-//     printf("Escreva o número que irá ser o EXPOENTE\n");
-//     scanf("%d", &expoente);
-
-//     if (expoente==0){
-//         resultado = 1;
-
-//     } else {
-//         for (int i=1; i<=expoente; i++){
-
-//             resultado = resultado*base;
-//             printf("%.2d\n", resultado);
-            
-//         }
-
-//         if(expoente<0){
-//             resultado = 1/resultado;
-//         }
-
-
-//         printf("O resultado é %.2f", resultado);
-
-//     }
-
-
-// }
-
 int main() {
 
     int base, expoente;
