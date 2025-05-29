@@ -1,7 +1,8 @@
 /*
 
 1. Número Feliz
-Descrição: Um número é considerado feliz se, ao substituir o número pela soma dos quadrados de seus dígitos repetidamente, o resultado final for 1. Se entrar em um ciclo sem fim, não é feliz.
+Descrição: Um número é considerado feliz se, ao substituir o número pela soma dos quadrados de
+seus dígitos repetidamente, o resultado final for 1. Se entrar em um ciclo sem fim, não é feliz.
 Tarefa: Escreva um programa que verifique se um número é feliz.
 
 2. Sequência de Collatz
