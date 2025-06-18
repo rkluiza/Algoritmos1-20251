@@ -4,3 +4,13 @@
 retorne o resultado do grau final
 
 */
+
+double mediaUnisinos (grauA[], grauB[]){
+
+}
+
+int main() {
+    
+
+
+}
